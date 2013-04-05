@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                   http://www.springframework.org/schema/mvc        http://www.springframework.org/schema/mvc/spring-mvc.xsd
+                   http://www.springframework.org/schema/context    http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <!-- Look in this package for annotated java classes (@Controller, @Service, @Repository) and create beans for them.
+        We also connect different classes together by matching things that are annotated with @Autowired
+    -->
+    <mvc:annotation-driven />
+    <context:component-scan base-package="net.eewiki" />
+
+    <!-- This is for static content like javascript, css and images.
+        It tells the dispatcher to reroute anything with the /resources path to our src/main/webapp/ folder for those files. -->
+    <mvc:resources mapping="/resources/**" location="/" />
+
+    <!-- Forwards url requests to the "/" resource to the "index" view.
+        Goes directly to /WEB-INF/views/index.jsp.
+    -->
+    <mvc:view-controller path="/" view-name="index" />
+    <mvc:view-controller path="/index" view-name="index" />
+
+    <!--
+        Resolves view names to protected .jsp resources within the
+        /WEB-INF/views directory
+    -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+</beans>

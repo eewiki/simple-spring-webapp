@@ -1,0 +1,18 @@
+/*
+Some common styling that we pull in to "theme" the views.
+*/
+p {
+    font-style: italic;
+}
+
+/* anything with the "bigletters" class will have big green text */
+.bigletters {
+    font-size: 32px;
+    font-weight: bold;
+    color: green;
+}
+
+/* anything with the "error" class will be dark red */
+.error {
+    color: darkred;
+}
