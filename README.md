@@ -24,8 +24,8 @@ Things you have to install:
  
 Things Maven will get for you:
 
- - [SLF4J] (This is a logging API. Its nice for printing things to your output console.)
- - [JSTL] (Java Server Pages - Standard tag library is used in the .jsp files to help generate html and urls.)
+ - [SLF4J][slf4j] (This is a logging API. Its nice for printing things to your output console.)
+ - [JSTL][jstl] (Java Server Pages - Standard tag library is used in the .jsp files to help generate html and urls.)
  - [Spring 3.0.7.RELEASE][Spring] (Used for dependency injection and managing your web application.)
  
   [eewiki]: http://eewiki.net
@@ -33,5 +33,5 @@ Things Maven will get for you:
   [Spring]: http://www.springsource.org/
   [Maven]: http://maven.apache.org/
   [Tomcat]: http://tomcat.apache.org/
-  [SLF4j]: http://slf4j.org/
-  [JSTL]: http://jstl.java.net/
+  [slf4j]: http://slf4j.org/
+  [jstl]: http://jstl.java.net/
