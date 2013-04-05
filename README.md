@@ -19,14 +19,14 @@ We are using a couple different technologies to make this happen but most of the
 
 Things you have to install:
 
- - [Java] 6+  (_Grab the JDK since you're technically developing now._)
- - [Maven] 2.2.1+ (_This is your build utility. Its what makes our web app package (.war)._)
+ - [Java] 6+  (Grab the JDK since you're technically developing now.)
+ - [Maven] 2.2.1+ (This is your build utility. Its what makes our web app package (.war).)
  
 Things Maven will get for you:
 
- - [SLF4J] (_This is a logging API. Its nice for printing things to your output console._)
- - [JSTL] (_Java Server Pages - Standard tag library is used in the .jsp files to help generate html and urls._)
- - [Spring 3.0.7.RELEASE][Spring] (_Used for dependency injection and managing your web application._)
+ - [SLF4J] (This is a logging API. Its nice for printing things to your output console.)
+ - [JSTL] (Java Server Pages - Standard tag library is used in the .jsp files to help generate html and urls.)
+ - [Spring 3.0.7.RELEASE][Spring] (Used for dependency injection and managing your web application.)
  
   [eewiki]: http://eewiki.net
   [Java]: http://www.java.com/
